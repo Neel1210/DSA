@@ -1,0 +1,10 @@
+ if(temp==(*ps))
+        {
+            prev=temp;
+            temp=temp->next;
+            continue;
+        }
+        store=prev;
+        prev=temp;
+        temp=temp->next;
+        prev->next=store;
